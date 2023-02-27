@@ -21,7 +21,7 @@ function Signup() {
   function onSubmit() {
     const { email, password } = details;
     axios
-      .post("http://localhost:5000/user/signup", {
+      .post("https://recipe-backend-psi.vercel.app/user/signup", {
         email: email,
         password: password,
       })

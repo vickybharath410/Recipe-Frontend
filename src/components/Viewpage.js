@@ -9,7 +9,7 @@ function Viewpage() {
   const navigate=useNavigate();
 
   useEffect(()=>{
-    axios.get("http://localhost:5000/recipe/all/")
+    axios.get("https://recipe-backend-psi.vercel.app/recipe/all/")
     .then(res=>setDetails(res.data.details))
     .catch(e=>console.log(e))
   },[])

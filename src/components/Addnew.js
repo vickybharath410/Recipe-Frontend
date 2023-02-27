@@ -12,7 +12,7 @@ function Addnew() {
     });
     function handleSubmit(){
         let listIngredients=details.ingredients.split(",")
-        axios.post("http://localhost:5000/recipe/add",{
+        axios.post("https://recipe-backend-psi.vercel.app/recipe/add",{
             userId:localStorage.getItem("id"),
             title:details.title,
             author:details.author,
